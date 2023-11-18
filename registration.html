@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <style>
+        form{
+            text-align: center;
+            background-color: rgb(180, 106, 154);
+            margin-right: 300px;
+            margin-left: 300px;
+        }
+        h2{
+            text-align: center;
+        }
+        label{display: block;
+        }
+        input[type=text],
+        input[type=te],
+        input[type=email],
+        textarea,select{
+            border-radius: 20px;
+        }
+        input[type=submit]{
+            background-color: rgb(89, 118, 21);
+            cursor:pointer;
+        }
+        input[type=submit]:hover{
+            background-color: brown;
+        }
+    </style>
+    <body>
+        <h2>Registration Form</h2>
+        <form action="https://formspree.io/f/mvojnreb"method="post">
+            <label>Name</label>
+            <input type="text" name="name"required>
+            <label>Email</label>
+            <input type="email" email="email"required>
+            <label>phone number</label>
+            <input type="tel" phone number="phone number" required>
+            <label>Gender</label>
+            <select>
+                <option value="Male" >Male</option>
+                <option value="Female" >Female</option>
+                <option value="Others">Others</option>
+            </select>
+            <label>Zipcode</label>
+            <input type="text" Zipcode="Zipcode">
+            <label>About</label>
+            <textarea name="about"></textarea> 
+            <label for="favcolor">Select your favouritecolor:</label> 
+            <input type="color" id="favcolor" name="favcolor">
+            <label for="birthday">Birthday</label>
+            <input type="date" id="birthday" name="birthday">
+            <label for="birthdaytime">Birthday(date and time)</label>
+            <input type="datetime-local" id="birthdaytime"name="birthdaytime">
+            <label for="birthdaymonth">birthdaymonth</label>
+            <input type="month"name="birthdaymonth">
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile">
+            <label for="quantity">quantity(between 1 and 5):</label>
+            <input type="number id" name="quantity" min="1" max="5">
+            <label for="username">Username<br></label>
+            <input type="text" name="username"><br>
+            <label for="pwd">Password</label>
+            <input type="password" name="password">
+            <input type="radio"id="html" name="fav_language" value="HTML">
+            <label for="html">HTMl</label>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label>
+            <input type="radio" id="javacript" name="fav_languages" value="JAVASCRIPT">
+            <label for="javascript">JAVASCRIPT</label>
+            <label for="vol">VOLUME(between 0 and 50):</label>
+            <input type="range" name="volume" min="0" max="50">
+            <label for="gsearch">Search Google:</label>
+            <input type="search" name="gsearch">
+            <label for="phone">enter your phone number</label>
+            <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            <label for="appt">Select a time:</label>
+            <input type="time" name="appt">
+            <label for="homepage">Add your homepage:</label>
+            <input type="url" name="homepage">
+            <label for="week">Select a week</label>
+            <input type="week" name="week">
+
+            <label>Submit</label>
+            <input type="submit" value="register">
+        </form>
+
+    </body>
+</html>
